@@ -45,4 +45,64 @@ class Taras_NoFrills_IndexController extends Mage_Core_Controller_Front_Action {
 		$main_block->setChild('the_first',$paragraph_block);
 		echo $main_block->toHtml();
 	}
+
+	public function index8Action()  {
+		$block_1 = new Mage_Core_Block_Text();
+		$block_1->setText('Original Text');
+
+		$block_2 = new Mage_Core_Block_Text();
+		$block_2->setText('The second sentence. ');
+
+		$main_block = new Mage_Core_Block_Template();
+		$main_block->setTemplate('taras/nofrills/helloworld3.phtml');
+
+		$main_block->setChild('the_first', $block_1);
+		$main_block->setChild('the_second', $block_2);
+
+		$block_1->setText('Wait, I want this text instead. ');
+
+		echo $main_block->toHtml();
+	}
+
+	public function index9Action()  {
+		$block_1 = new Mage_Core_Block_Text();
+		$block_1->setText('Original Text');
+
+		$block_2 = new Mage_Core_Block_Text();
+		$block_2->setText('The second sentence. ');
+
+		$main_block = new Taras_NoFrills_Block_Helloworld();
+		$main_block->setTemplate('taras/nofrills/helloworld3.phtml');
+
+		$main_block->setChild('the_first', $block_1);
+		$main_block->setChild('the_second', $block_2);
+
+		$block_1->setText('Wait, I want this text instead. ');
+
+		echo $main_block->toHtml();
+	}
+
+	public function index10Action()  {
+		$block_1 = new Mage_Core_Block_Text();
+		$block_1->setText('Original Text');
+
+		$block_2 = new Mage_Core_Block_Text();
+		$block_2->setText('The second sentence. ');
+
+		$main_block = new Taras_NoFrills_Block_Helloworld();
+//		$main_block->setTemplate('taras/nofrills/helloworld3.phtml');
+
+		$main_block->setChild('the_first', $block_1);
+		$main_block->setChild('the_second', $block_2);
+
+		$block_1->setText('Wait, I want this text instead. ');
+
+		echo $main_block->toHtml();
+	}
+
+	public function helloblockAction()
+	{
+		$main_block = new Taras_NoFrills_Block_Helloworld();
+		echo $main_block->toHtml();
+	}
 }

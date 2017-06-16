@@ -105,4 +105,30 @@ class Taras_NoFrills_IndexController extends Mage_Core_Controller_Front_Action {
 		$main_block = new Taras_NoFrills_Block_Helloworld();
 		echo $main_block->toHtml();
 	}
+
+	public function layoutAction()
+	{
+		$layout = Mage::getSingleton('core/layout');
+		$block = $layout->createBlock('core/template', 'root');
+		$block->setTemplate('taras/nofrills/helloworld5.phtml');
+		echo $block->toHtml();
+	}
+
+	public function layout2Action()
+	{
+		$layout = Mage::getSingleton('core/layout');
+		$block = $layout->createBlock('taras_nofrills/helloworld', 'root');
+
+		echo $block->toHtml();
+	}
+
+	public function layout3Action()
+	{
+		$layout = Mage::getSingleton('core/layout');
+		$block = $layout->createBlock('taras_nofrills/helloworld', 'root');
+
+		$layout->addOutputBlock('root');
+		$layout->setDirectOutput(true);
+		$layout->getOutput();
+	}
 }

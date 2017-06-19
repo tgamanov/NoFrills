@@ -1,0 +1,14 @@
+<layout>
+    <block type="taras_nofrills/template" name="root" template="simple-page/2col.phtml" output="toHtml">
+
+        <block type="taras_nofrills/template" name="additional_head" template="simple-page/head.phtml"/>
+        <block type="taras_nofrills/template" name="sidebar">
+            <action method="setTemplate">
+                <template>simple-page/sidebar.phtml</template>
+            </action>
+        </block>
+
+        <block type="core/text_list" name="content"/>
+
+    </block>
+</layout>

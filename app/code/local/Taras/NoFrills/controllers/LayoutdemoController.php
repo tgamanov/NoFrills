@@ -23,7 +23,8 @@ class Taras_NoFrills_LayoutdemoController extends Mage_Core_Controller_Front_Act
 
 	public function indexAction() {
 		$layout = $this->_initLayout();
-		$text   = $layout->createBlock( 'core/text', 'words' );
+
+		$text = $layout->createBlock( 'core/text', 'words' );
 		$text->setText( 'It was the BEST time, it was the BLURST?! of times?' );
 
 		$content = $layout->getBlock( 'content' );

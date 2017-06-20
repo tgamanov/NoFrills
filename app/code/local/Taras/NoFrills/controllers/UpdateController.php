@@ -30,4 +30,16 @@ class Taras_NoFrills_UpdateController extends Mage_Core_Controller_Front_Action 
 
 		echo $layout->setDirectOutput( true )->getOutput();
 	}
+
+	public function helloUpdatesAction() {
+		$layout         = Mage::getSingleton( 'core/layout' );
+		$update_manager = $layout->getUpdate();
+		$update_manager->addUpdate( '
+        <block type="taras_nofrills/helloworld" name="root" output="toHtml" />
+        ' );
+		$layout->generateXml();
+		$layout->generateBlocks();
+		echo $layout->setDirectOutput( true )->getOutput();
+
+	}
 }

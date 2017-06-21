@@ -1,0 +1,12 @@
+<reference name="content">
+    <block type="core/text" name="our_message">
+        <action method="setText">
+            <text>
+                Magento is a foxy system. Sidebar? We don't need a sidebar!
+            </text>
+        </action>
+    </block>
+</reference>
+<remove name="sidebar"/>
+
+

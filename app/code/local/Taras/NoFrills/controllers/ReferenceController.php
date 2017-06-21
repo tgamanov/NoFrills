@@ -72,4 +72,12 @@ class Taras_NoFrills_ReferenceController extends Mage_Core_Controller_Front_Acti
 		                   ->addUpdate( file_get_contents( $path_update ) );
 	}
 
+	public function handleAction()
+	{
+		$this->loadLayout();
+		$handles = Mage::getSingleton('core/layout')->getUpdate()->getHandles();
+		var_dump($handles);
+		exit;
+	}
+
 }

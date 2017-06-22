@@ -1,21 +1,41 @@
 <?xml version="1.0" ?>
 <layout version="0.1.0">
+    <default>
+        <reference name="content">
+            <block type="core/text" name="for_everyone">
+                <action method="setText">
+                    <text>I am on all pages! </text>
+                </action>
+            </block>
+        </reference>
+    </default>
     <taras_nofrills_package_index>
         <reference name="content">
             <block type="core/text" name="our_message">
                 <action method="setText">
-                    <text>Hello Mars</text>
+                    <text>Hello Mars. </text>
                 </action>
             </block>
         </reference>
+
+        <update handle="taras_nofrills_package_second"/>
+
     </taras_nofrills_package_index>
     <taras_nofrills_package_second>
         <reference name="content">
-            <block type="core/text" name="our_message">
+            <block type="core/text" name="planet_5">
                 <action method="setText">
-                    <text>Hello Jupiter</text>
+                    <text>Hello Jupiter. </text>
                 </action>
             </block>
+        </reference>
+    </taras_nofrills_package_second>
+
+    <taras_nofrills_package_second>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/1column.phtml</template>
+            </action>
         </reference>
     </taras_nofrills_package_second>
 </layout>

@@ -14,7 +14,25 @@
                 <label>YouTube Video ID</label>
                 <type>text</type>
             </video_id>
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                <value>taras_nofrills</value>
+                <label>Frontend Template</label>
+                <type>select</type>
+
+                <values>
+                    <as_video>
+                        <value>youtube.phtml</value>
+                        <label>Embed Video</label>
+                    </as_video>
+                    <as_link>
+                        <value>youtube-as-link.phtml</value>
+                        <label>Link Video</label>
+                    </as_link>
+                </values>
+            </template>
         </parameters>
-        <!-- END new cection -->
+        <!-- END new section -->
     </taras_layoutbook_youtube>
 </widgets>

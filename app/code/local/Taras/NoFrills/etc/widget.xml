@@ -1,0 +1,20 @@
+<widgets>
+    <taras_layoutbook_youtube type="taras_nofrills/youtube">
+        <name>YouTube Example Widget</name>
+        <decription type="desc">
+            This widget displays a YouTube video.
+        </decription>
+
+        <!-- START new section -->
+        <parameters>
+            <video_id>
+                <required>1</required>
+                <visible>1</visible>
+                <value>Enter ID Here</value>
+                <label>YouTube Video ID</label>
+                <type>text</type>
+            </video_id>
+        </parameters>
+        <!-- END new cection -->
+    </taras_layoutbook_youtube>
+</widgets>

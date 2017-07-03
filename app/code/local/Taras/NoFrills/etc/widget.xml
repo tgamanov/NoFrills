@@ -34,5 +34,22 @@
             </template>
         </parameters>
         <!-- END new section -->
+        <suported_blocks>
+            <uniquely_named_node>
+                <block_name>content</block_name>
+                <template>
+                    <unique_name_one>ad_video</unique_name_one>
+                    <unique_name_two>ad_link</unique_name_two>
+                </template>
+            </uniquely_named_node>
+
+            <another_uniquely_named_node>
+                <block_name>left</block_name>
+                <template>
+                    <unique_name_one>ad_video</unique_name_one>
+                    <unique_name_two>ad_link</unique_name_two>
+                </template>
+            </another_uniquely_named_node>
+        </suported_blocks>
     </taras_layoutbook_youtube>
 </widgets>

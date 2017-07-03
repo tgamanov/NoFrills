@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Namespace_Module>
+            <version>0.1.0</version>
+        </Namespace_Module>
+    </modules>
+    <global>
+        <models>
+            <namespace_module>
+                <class>Namespace_Module_Model</class>
+                <resourceModel>namespace_module_resource</resourceModel>
+            </namespace_module>
+            <namespace_module_resource>
+                <class>Namespace_Module_Model_Resource</class>
+            </namespace_module_resource>
+        </models>
+        <blocks>
+            <namespace_module>
+                <class>Namespace_Module_Block</class>
+            </namespace_module>
+        </blocks>
+        <helpers>
+            <namespace_module>
+                <class>Namespace_Module_Helper</class>
+            </namespace_module>
+        </helpers>
+    </global>
+</config>
